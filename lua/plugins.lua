@@ -28,7 +28,6 @@ packer.startup(function(use)
    -- Icones
    use("ryanoasis/vim-devicons")
    use("kyazdani42/nvim-web-devicons")
-   use("terroo/fonts")
 
    -- Substitui caracteres
    use("tpope/vim-surround")
@@ -56,7 +55,7 @@ packer.startup(function(use)
    use("lukas-reineke/indent-blankline.nvim")
 
    -- Formatação
-   use("sbdchd/neoformat")
+   use("lukas-reineke/lsp-format.nvim")
 
    -- Comentar
    use("terrortylor/nvim-comment")

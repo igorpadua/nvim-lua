@@ -114,11 +114,6 @@ _G.packer_plugins = {
     path = "/home/igor/.local/share/nvim/site/pack/packer/start/copilot.vim",
     url = "https://github.com/github/copilot.vim"
   },
-  fonts = {
-    loaded = true,
-    path = "/home/igor/.local/share/nvim/site/pack/packer/start/fonts",
-    url = "https://github.com/terroo/fonts"
-  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/home/igor/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -133,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/igor/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["lsp-format.nvim"] = {
+    loaded = true,
+    path = "/home/igor/.local/share/nvim/site/pack/packer/start/lsp-format.nvim",
+    url = "https://github.com/lukas-reineke/lsp-format.nvim"
   },
   ["lsp_signature.nvim"] = {
     loaded = true,

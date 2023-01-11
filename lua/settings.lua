@@ -28,6 +28,8 @@ require'colorizer'.setup()
 require('nvim-web-devicons').get_icons()
 require('nvim_comment').setup()
 require('lsp_config')
+require("lsp-format").setup {}
+require("lspconfig").gopls.setup { on_attach = require("lsp-format").on_attach }
 
 -- Formatar ao salvar
 cmd([[

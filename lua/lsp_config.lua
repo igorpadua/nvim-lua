@@ -46,3 +46,4 @@ require'lspconfig'.jsonls.setup{}
 require'lspconfig'.luau_lsp.setup{}
 require'lspconfig'.pyright.setup{}
 require'lspconfig'.sumneko_lua.setup {}
+require'lspconfig'.tsserver.setup {}

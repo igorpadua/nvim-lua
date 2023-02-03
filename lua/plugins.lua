@@ -21,6 +21,7 @@ packer.startup(function(use)
 
    -- Tema
    use("projekt0n/github-nvim-theme")
+   use 'navarasu/onedark.nvim'
 
    -- Gerenciador de arquivos
    use("nvim-tree/nvim-tree.lua")

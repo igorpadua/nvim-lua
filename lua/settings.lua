@@ -14,8 +14,9 @@ opt.showtabline = 2
 opt.showmode = false
 
 -- Theme
+
 opt.termguicolors = true
-require('github-theme').setup({theme_style= "dimmed"})
+require('onedark').load()
 
 -- Editor
 opt.mouse = "a"
@@ -33,14 +34,6 @@ require('nvim_comment').setup()
 require("lsp-format").setup {}
 require("lspconfig").gopls.setup { on_attach = require("lsp-format").on_attach }
 
--- Formatar ao salvar
--- cmd([[
--- augroup fmt
---   autocmd!
---   autocmd BufWritePre * undojoin | Neoformat
--- augroup END
--- ]])
---
 -- Suprimir erro clangd
 local notify = vim.notify
 vim.notify = function(msg, ...)

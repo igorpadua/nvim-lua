@@ -8,8 +8,7 @@ Esse reposítorio contém as configurações do meu nvim com lua.
 2. Copilot
 3. nvim-lsp + luasnip
 4. Barra de status (staline)
-5. Tema do github (github-nvim-theme)
-6. Identação com cor (indent-blankline)
+5. Tema do onedark (onedark.nvim)
 
 # Pré-Instal
 

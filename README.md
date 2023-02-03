@@ -5,7 +5,7 @@ Esse reposítorio contém as configurações do meu nvim com lua.
 # Plugins
 
 1. Um gerenciador de arquivos (nvim-tree)
-2. Copilot + tabnine
+2. Copilot
 3. nvim-lsp + luasnip
 4. Barra de status (staline)
 5. Tema do github (github-nvim-theme)

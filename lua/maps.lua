@@ -1,7 +1,3 @@
-local set = vim.api.nvim_set_keymap
-local ns = {noremap = true, silent = true}
-local cmd = vim.cmd
-
 local function map(m, k, v)
     vim.keymap.set(m, k, v, { silent = true })
 end

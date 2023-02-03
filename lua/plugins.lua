@@ -19,7 +19,7 @@ packer.startup(function(use)
    -- Instalador de pacotes
    use("wbthomason/packer.nvim")
 
-   -- Tema 
+   -- Tema
    use("projekt0n/github-nvim-theme")
 
    -- Gerenciador de arquivos
@@ -37,10 +37,6 @@ packer.startup(function(use)
       "windwp/nvim-autopairs",
       config = function() require("nvim-autopairs").setup {} end
    }
-
-   -- Linter
-   use("github/copilot.vim")
-   use("honza/vim-snippets")
 
    -- Syntax Highlight
    use("sheerun/vim-polyglot")
@@ -60,20 +56,35 @@ packer.startup(function(use)
    -- Comentar
    use("terrortylor/nvim-comment")
 
+   -- Abas
+   -- use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+
    -- LSP
-   use("neovim/nvim-lspconfig")
-   use("hrsh7th/nvim-cmp")
-   use("hrsh7th/cmp-nvim-lsp")
-   use("hrsh7th/cmp-buffer")
-   use("hrsh7th/cmp-path")
-   use("hrsh7th/cmp-cmdline")
-   use("saadparwaiz1/cmp_luasnip")
-   use("L3MON4D3/LuaSnip")
-   use("rafamadriz/friendly-snippets")
-   use("ray-x/lsp_signature.nvim")
-   use({"tzachar/cmp-tabnine", run="./install.sh", requires = "hrsh7th/nvim-cmp"})
-   use("onsails/lspkind-nvim")
-   use("williamboman/mason.nvim")
+   use {
+      'VonHeikemen/lsp-zero.nvim',
+      branch = 'v1.x',
+      requires = {
+         -- LSP Support
+         {'neovim/nvim-lspconfig'},
+         {'williamboman/mason.nvim'},
+         {'williamboman/mason-lspconfig.nvim'},
+
+         -- Autocompletion
+         {'hrsh7th/nvim-cmp'},
+         {'hrsh7th/cmp-nvim-lsp'},
+         {'hrsh7th/cmp-buffer'},
+         {'hrsh7th/cmp-path'},
+         {'saadparwaiz1/cmp_luasnip'},
+         {'hrsh7th/cmp-nvim-lua'},
+
+         -- Snippets
+         {'L3MON4D3/LuaSnip'},
+         {'rafamadriz/friendly-snippets'},
+         {'tzachar/cmp-tabnine', run='./install.sh'},
+      }
+   }
+   use("honza/vim-snippets")
+   use("github/copilot.vim")
 
    -- Java
    use('mfussenegger/nvim-jdtls')

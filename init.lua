@@ -1,5 +1,6 @@
 require("plugins")
 require("settings")
 require("maps")
-require("complete")
+require("lsp")
 require("tree")
+require("indent")

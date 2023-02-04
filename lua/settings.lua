@@ -1,7 +1,3 @@
-local augroup = vim.api.nvim_create_augroup
-local ThePrimeagenGroup = augroup('ThePrimeagen', {})
-local autocmd = vim.api.nvim_create_autocmd
-
 -- General Setup
 vim.opt.number = true
 vim.opt.title = true
@@ -40,6 +36,10 @@ vim.notify = function(msg, ...)
 end
 
 -- Erro BufWritePre
+local augroup = vim.api.nvim_create_augroup
+local ThePrimeagenGroup = augroup('ThePrimeagen', {})
+local autocmd = vim.api.nvim_create_autocmd
+
 autocmd({"BufWritePre"}, {
     group = ThePrimeagenGroup,
     pattern = "*",

@@ -43,7 +43,7 @@ packer.startup(function(use)
    use("sheerun/vim-polyglot")
 
    -- Barra de status
-   use("tamton-aquib/staline.nvim")
+   use("nvim-lualine/lualine.nvim")
 
    -- Exibir cores
    use("norcalli/nvim-colorizer.lua")

@@ -27,12 +27,13 @@ cmd([[ let extension = expand('%:e') ]])
 
 -- Require
 require("mason").setup()
-require('staline').setup()
+-- require('staline').setup()
 require'colorizer'.setup()
 require('nvim-web-devicons').get_icons()
 require('nvim_comment').setup()
 require("lsp-format").setup {}
 require("lspconfig").gopls.setup { on_attach = require("lsp-format").on_attach }
+require('lualine').setup {options = { theme = 'onedark' }}
 
 -- Suprimir erro clangd
 local notify = vim.notify

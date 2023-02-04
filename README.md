@@ -7,7 +7,7 @@ Esse reposítorio contém as configurações do meu nvim com lua.
 1. Um gerenciador de arquivos (nvim-tree)
 2. Copilot
 3. nvim-lsp + luasnip
-4. Barra de status (staline)
+4. Barra de status (lualine)
 5. Tema do onedark (onedark.nvim)
 
 # Pré-Instal

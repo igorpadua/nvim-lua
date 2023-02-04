@@ -9,6 +9,7 @@ Esse reposítorio contém as configurações do meu nvim com lua.
 3. nvim-lsp + luasnip
 4. Barra de status (lualine)
 5. Tema do onedark (onedark.nvim)
+6. Telescope
 
 # Pré-Instal
 

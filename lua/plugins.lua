@@ -20,7 +20,6 @@ packer.startup(function(use)
    use("wbthomason/packer.nvim")
 
    -- Tema
-   use("projekt0n/github-nvim-theme")
    use 'navarasu/onedark.nvim'
 
    -- Gerenciador de arquivos
@@ -57,8 +56,11 @@ packer.startup(function(use)
    -- Comentar
    use("terrortylor/nvim-comment")
 
-   -- Abas
-   -- use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
+   -- Telescope
+   use {
+      'nvim-telescope/telescope.nvim', tag = '0.1.1',
+      requires = { {'nvim-lua/plenary.nvim'} }
+   }
 
    -- LSP
    use {

@@ -1,33 +1,28 @@
-local opt = vim.opt
-local cmd = vim.cmd
-
 local augroup = vim.api.nvim_create_augroup
 local ThePrimeagenGroup = augroup('ThePrimeagen', {})
 local autocmd = vim.api.nvim_create_autocmd
 
 -- General Setup
-opt.number = true
-opt.title = true
-opt.modeline = true
-opt.laststatus = 3
-opt.showtabline = 2
-opt.showmode = false
+vim.opt.number = true
+vim.opt.title = true
+vim.opt.modeline = true
+vim.opt.laststatus = 3
+vim.opt.showtabline = 2
+vim.opt.showmode = false
 
 -- Theme
-
-opt.termguicolors = true
+vim.opt.termguicolors = true
 require('onedark').load()
 
 -- Editor
-opt.mouse = "a"
-opt.cursorline = true
+vim.opt.mouse = "a"
+vim.opt.cursorline = true
 
 -- Barra de Status
-cmd([[ let extension = expand('%:e') ]])
+vim.cmd([[ let extension = expand('%:e') ]])
 
 -- Require
 require("mason").setup()
--- require('staline').setup()
 require'colorizer'.setup()
 require('nvim-web-devicons').get_icons()
 require('nvim_comment').setup()

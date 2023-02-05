@@ -14,6 +14,7 @@ lsp.ensure_installed({
   'groovyls',
   'cssls',
   'html',
+  'marksman',
 })
 
 -- Fix Undefined global 'vim'
@@ -40,6 +41,7 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
 cmp_mappings['<Tab>'] = nil
 cmp_mappings['<S-Tab>'] = nil
 
+
 lsp.setup_nvim_cmp({
   mapping = cmp_mappings
 })
@@ -56,7 +58,6 @@ lsp.set_preferences({
 
 lsp.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
-
   vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
   vim.keymap.set("n", "K", function() vim.lsp.buf.hover() end, opts)
   vim.keymap.set("n", "<leader>vws", function() vim.lsp.buf.workspace_symbol() end, opts)
@@ -73,5 +74,25 @@ lsp.setup()
 
 vim.diagnostic.config({
     virtual_text = true
+})
+
+local tabnine = require('cmp_tabnine.config')
+tabnine:setup({
+  max_lines = 1000;
+  max_num_results = 20;
+  sort = true;
+  run_on_every_keystroke = true;
+  snippet_placeholder = '..';
+})
+
+cmp.setup({
+    sources = {
+      { name = 'nvim_lsp' },
+      { name = 'luasnip' },
+      { name = 'buffer' },
+      { name = 'path' },
+      { name = 'nvim_lua' },
+      { name = 'cmp_tabnine' },
+    },
 })
 

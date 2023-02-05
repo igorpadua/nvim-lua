@@ -83,11 +83,10 @@ packer.startup(function(use)
          -- Snippets
          {'L3MON4D3/LuaSnip'},
          {'rafamadriz/friendly-snippets'},
-         {'tzachar/cmp-tabnine', run='./install.sh'},
       }
    }
-   use("honza/vim-snippets")
    use("github/copilot.vim")
+   use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
 
    -- Java
    use('mfussenegger/nvim-jdtls')

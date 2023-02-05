@@ -97,6 +97,8 @@ require('tabnine').setup({
   execlude_filetypes = {"TelescopePrompt"}
 })
 
+require "lsp_signature".setup()
+
 cmp.setup({
     sources = {
       { name = 'nvim_lsp' },

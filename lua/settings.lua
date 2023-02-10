@@ -25,6 +25,7 @@ require('nvim_comment').setup()
 require("lsp-format").setup {}
 require("lspconfig").gopls.setup { on_attach = require("lsp-format").on_attach }
 require('lualine').setup {options = { theme = 'onedark' }}
+require("toggleterm").setup{open_mapping = [[<c-s>]]}
 
 -- Suprimir erro clangd
 local notify = vim.notify

@@ -11,6 +11,7 @@ Esse reposítorio contém as configurações do meu nvim com lua.
 5. Tema do onedark (onedark.nvim)
 6. Telescope
 7. Indentação (indent-blankline)
+8. Terminal embutido
 
 # Pré-Instal
 

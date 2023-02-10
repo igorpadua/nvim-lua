@@ -1,6 +1,5 @@
 require("plugins")
 require("settings")
 require("maps")
-require("tabnine")
 require("lsp")
 require("tree")

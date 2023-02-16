@@ -6,6 +6,11 @@ vim.opt.laststatus = 3
 vim.opt.showtabline = 2
 vim.opt.showmode = false
 
+-- Tabs
+vim.opt.tabstop = 4
+vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 4
+
 -- Theme
 vim.opt.termguicolors = true
 require('onedark').load()
@@ -25,7 +30,7 @@ require('nvim_comment').setup()
 require("lsp-format").setup {}
 require("lspconfig").gopls.setup { on_attach = require("lsp-format").on_attach }
 require('lualine').setup {options = { theme = 'onedark' }}
-require("toggleterm").setup{open_mapping = [[<c-s>]]}
+require("toggleterm").setup{open_mapping = [[<c-s>]], close_on_exit = true}
 
 -- Suprimir erro clangd
 local notify = vim.notify

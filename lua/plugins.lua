@@ -66,6 +66,9 @@ packer.startup(function(use)
       require("toggleterm").setup()
    end}
 
+   -- Tab
+   use {'romgrk/barbar.nvim', requires = 'nvim-web-devicons'}
+
    -- LSP
    use {
       'VonHeikemen/lsp-zero.nvim',

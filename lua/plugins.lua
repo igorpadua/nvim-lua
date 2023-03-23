@@ -47,9 +47,6 @@ packer.startup(function(use)
    -- Exibir cores
    use("norcalli/nvim-colorizer.lua")
 
-   -- Identação
-   use("lukas-reineke/indent-blankline.nvim")
-
    -- Formatação
    use("lukas-reineke/lsp-format.nvim")
 
@@ -93,9 +90,6 @@ packer.startup(function(use)
    use {'tzachar/cmp-tabnine', run='./install.sh', requires = 'hrsh7th/nvim-cmp'}
    use { 'codota/tabnine-nvim', run = "./dl_binaries.sh" }
    use("ray-x/lsp_signature.nvim")
-
-   -- Java
-   use('mfussenegger/nvim-jdtls')
 
    if packer_bootstrap then
       packer.sync()

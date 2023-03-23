@@ -14,19 +14,19 @@ lsp.ensure_installed({
   'cssls',
   'html',
   'marksman',
+  'lua_ls'
 })
 
 -- Fix Undefined global 'vim'
-lsp.configure('sumneko_lua', {
-    settings = {
-        Lua = {
-            diagnostics = {
-                globals = { 'vim' }
-            }
-        }
+require'lspconfig'.lua_ls.setup {
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = {'vim'}
+      }
     }
-})
-
+  }
+}
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -85,15 +85,6 @@ tabnine:setup({
 	ignored_file_types = {
 	},
 	show_prediction_strength = true
-})
-
-require('tabnine').setup({
-  disable_auto_comment=true,
-  accept_keymap="<Tab>",
-  dismiss_keymap = "<C-]>",
-  debounce_ms = 800,
-  suggestion_color = {gui = "#808080", cterm = 244},
-  execlude_filetypes = {"TelescopePrompt"}
 })
 
 require "lsp_signature".setup()

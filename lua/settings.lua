@@ -30,7 +30,17 @@ require('nvim_comment').setup()
 require("lsp-format").setup {}
 require("lspconfig").gopls.setup { on_attach = require("lsp-format").on_attach }
 require('lualine').setup {options = { theme = 'onedark' }}
-require("toggleterm").setup{open_mapping = [[<c-s>]], close_on_exit = true}
+require("toggleterm").setup{
+    open_mapping = [[<c-\>]],
+    shade_filetypes = {},
+    shade_terminals = true,
+    shading_factor = 1,
+    start_in_insert = true,
+    persist_size = true,
+    direction = 'float', -- 'vertical' | 'horizontal' | 'float'
+    close_on_exit = true,
+    shell = vim.o.shell,
+}
 
 -- Suprimir erro clangd
 local notify = vim.notify

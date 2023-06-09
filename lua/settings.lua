@@ -13,7 +13,7 @@ vim.opt.shiftwidth = 4
 
 -- Theme
 vim.opt.termguicolors = true
-require('onedark').load()
+require("github-theme").setup({theme_style = "dimmed"})
 
 -- Editor
 vim.opt.mouse = "a"

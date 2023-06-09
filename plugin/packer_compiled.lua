@@ -119,6 +119,11 @@ _G.packer_plugins = {
     path = "/home/igor/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["github-nvim-theme"] = {
+    loaded = true,
+    path = "/home/igor/.local/share/nvim/site/pack/packer/start/github-nvim-theme",
+    url = "https://github.com/projekt0n/github-nvim-theme"
+  },
   ["lsp-format.nvim"] = {
     loaded = true,
     path = "/home/igor/.local/share/nvim/site/pack/packer/start/lsp-format.nvim",
@@ -180,15 +185,20 @@ _G.packer_plugins = {
     path = "/home/igor/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/nvim-tree/nvim-tree.lua"
   },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/igor/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  },
+  ["nvim-treesitter-angular"] = {
+    loaded = true,
+    path = "/home/igor/.local/share/nvim/site/pack/packer/start/nvim-treesitter-angular",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-angular"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/igor/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
-  },
-  ["onedark.nvim"] = {
-    loaded = true,
-    path = "/home/igor/.local/share/nvim/site/pack/packer/start/onedark.nvim",
-    url = "https://github.com/navarasu/onedark.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
